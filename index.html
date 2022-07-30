@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Formulario</title>
+</head>
+<body>
+    <header>
+    <img src="./Imagens Kenzie/a3b59321-0b03-417d-a1ad-06ee323aed64_thumb.jpg" alt="Logo Kenzie" width="100px" height="100px">
+    </header>
+    
+    <h1>Formulario de Cadastro</h1>
+    <p>Preencha todos os dados com atenção!</p>
+    <!-- Formulario de Cadastro -->
+        <form   form action="">
+            <!-- Nome -->
+        <br>
+            <fieldset>
+                <legend>Formulario</legend>
+        <br>
+                <label for="nomeCompleto">Nome Completo</label> 
+                <input type="text" id="nomeCompleto" name="nomeCompleto" placeholder="Digite seu nome completo.." >
+        
+        <div>
+        <br>
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome aqui..." required="true">
+        </div>
+        <br>
+            <!-- E-mail -->
+        <div>
+            <label for="email">E-mail</label>
+            <input type="text" id="email" name="email" placeholder="Digite seu e-mail aqui..." required="true">
+        </div>
+        <br>
+            <!-- Descrição -->
+        <div>
+            <label for="descricao">Descrição</label>
+            
+        <div>
+        <br>
+                <textarea 
+                required="true"
+                name="descricao" 
+                id="descricao" 
+                cols="21" 
+                rows="5"
+                placeholder="Fale mais sobre você aqui..."
+                ></textarea>
+        
+        </div>
+            <!-- Módulos -->
+        <br>
+        <div>
+            <label for="modulo">Módulo</label> 
+                <select name="modulo" id="modulo" required="true" >
+                    <option value="">Escolher Módulo</option>
+                    <option value="modulo01">Modulo 01</option>
+                    <option value="modulo02">Modulo 02</option>
+                    <option value="modulo03">Modulo 03</option>
+                    <option value="modulo04">Modulo 04</option>
+                    <option value="modulo05">Modulo 05</option>
+                    <option value="modulo06">Modulo 06</option>
+                </select>
+        </div>
+        
+            <!-- Senhas -->
+        <div>
+        <br>
+            <label for="senha">Senha</label>
+            <input type="password" id="senha" required="true" placeholder="Digite sua senha aqui..." value="" >
+        </div>    
+
+        <div>
+        <br>
+            <label for="confirmarSenha">Confimar senha</label>
+            <input type="password" maxlength="8" id="confirmarSenha" required="true" placeholder="Digite sua senha novamente aqui..." value="" >
+        </div>    
+            <!-- Receber Novidades -->
+        <div>
+            <p>Deseja receber novidades em seu e-mail?</p>
+            <label for="sim">Sim</label>
+            <input type="radio" name="naoSim" id="sim" value="sim" required="true" >
+
+            <label for="nao">Não</label>
+            <input type="radio" name="naoSim" id="nao" value="nao" required="true">
+            
+            <!-- Botão  -->
+            <button type="submit">Cadastrar <img src="https://cdn-icons-png.flaticon.com/512/753/753210.png" alt="logo kenzie" height="10" width="10"></button>
+        </div>
+        </fieldset>
+
+
+        </form>
+    
+</body>
+</html>
